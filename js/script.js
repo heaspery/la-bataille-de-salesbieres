@@ -1,7 +1,4 @@
-/* global monogatari */
-
-
-// Define the music used in the game.
+//* Assets - music
 monogatari.assets ('music', {
 	'foret' : 'foret.mp3',
 	'grotte' : 'grotte.mp3',
@@ -10,92 +7,89 @@ monogatari.assets ('music', {
 
 });
 
+//* Main screen texts
 monogatari.component ('main-screen').template (() => {
-
     return `
 		<h1>La Bataille de Salesbières</h1>
-		<h2>Perce les mystères de la dernière bataille du Roi Arthur, en explorant les différents scénarios que te propose le jeu en incarnant à chaque fois des personnages différents</h2>
+		<h2>Perce les mystères de la dernière bataille du roi Arthur, en explorant les différents scénarios que te propose le jeu et en incarnant les personnages de son univers</h2>
 		<main-menu></main-menu>
     `;
 });
-// Define the messages used in the game.
+
+//* Notification message, end of each path 
 monogatari.action ('message').messages ({
 	'fin1': {
 		title: 'Fin : Le Blizzard',
-		subtitle: 'Le froid a eu raison de toi. Malgré ta détermination de trouver mieux qu\'une grotte, le vent t\'a glacé le sang.',
+		subtitle: 'Le froid a eu raison de toi. Malgré ta détermination à trouver mieux qu\'une grotte, le vent t\'a glacé le sang.',
 		body: 'Recommence encore une fois et découvres-en plus!'
 	},
 
 	'Guenievre' : {
 		title: 'Fin : Guenièvre',
-		subtitle: 'Eléments découverts : Femme du roi Arthur, kidnappée par Mordred',
+		subtitle: 'Eléments découverts : Elle est la Femme du roi Arthur et kidnappée par Mordred.',
 		body: 'Recommence encore une fois et découvres-en plus!',
 
 	},
 
 	'fin2' : {
 		title: 'Fin : Long silence',
-		subtitle: 'Ton refus a refroidi la pièce, autant que l\'air glacial de l\'extérieur de la grotte, tu survis à cette nuit, même si tu as donné des envies de meurte à l\'ermite, et repars le lendemain vers d\'autres contrées.',
+		subtitle: 'Ton refus a refroidi la pièce, autant que l\'air glacial de l\'extérieur de la grotte. Tu survis à cette nuit, même si tu as donné des envies de meurte à l\'ermite et repars le lendemain vers d\'autres contrées.',
 		body: 'Recommence encore une fois et découvres-en plus!',
 	},
 
 	'Morgane1': {
 		title: 'Fin : Morgane',
 		subtitle: 'Partie A', 
-		body: 'Eléments découverts : demi-soeur du Roi Arthur, Conception du roi issue d\'un adultère',
+		body: 'Eléments découverts : Elle est la demi-soeur du Roi Arthur et la naissance de ce dernier est issue d\'une relation adultère.',
 
 	},
 
 	'Morgane2' : {
 		title: 'Fin : Morgane',
 		subtitle: 'Partie B',
-		body: 'Eléments découverts : le père du roi a tué son père, élevée par Merlin, mystérieuse réconciliation avec le roi',
+		body: 'Eléments découverts : Le père du roi Arthur a tué le père de Morgane, elle est élevée par Merlin et se réconcilie mystérieusement avec le roi.',
 	},
 
 	'Viviane1' : {
 		title: 'Fin : Viviane',
 		subtitle: 'Partie A',
-		body: 'Eléments découverts : cofondatrice de la Table Ronde avec le roi Arthur, éducatrice de Lancelot du lac '
+		body: 'Eléments découverts : Elle est la cofondatrice de la Table Ronde avec le roi Arthur et éducatrice de Lancelot du lac.'
 	},
 
 	'Viviane2' : {
 		title: 'Fin : Viviane',
 		subtitle: 'Partie B',
-		body: 'Eléments découverts: aimée par Merlin, Merlin fils d\'un diable et d\'une vierge, Merlin lui a enseigné la magie'
+		body: 'Eléments découverts: Elle est aimée par Merlin qui lui a appris la magie. Celui-ci est le fils d\'un diable et d\'une vierge.'
 	},
 
 	'Arthur1' : {
 		title: 'Fin : Arthur',
-		body: 'Eléments découverts : mari de Guenièvre, union avec Morgane qui donnera Mordred, bataille mortelle contre son fils Mordred, mort à Avalon',
+		body: 'Eléments découverts : Il est le mari de Guenièvre mais s\'unit avec Morgane qui enfantera Mordred. Il se bat contre ce fils lors de la bataille de Salesbières qui lui vaudra sa mort.',
 
 	},
 
 	'Lancelot' : {
 		title: 'Fin : Lancelot',
-		body: 'Eléments découverts : entretient une liaison avec Guenièvre, chevalier du roi',
+		body: 'Eléments découverts : Il entretient une liaison avec Guenièvre et est un chevalier du roi à la Table Ronde.',
 
 	},
 
 	'Merlin1' : {
 		title: 'Fin : Merlin',
 		subtitle: 'Partie A',
-		body: 'Eléments appris : Merlin possède un don d\'ubiquité ', 
+		body: 'Eléments appris : Merlin possède un don d\'ubiquité. ', 
 	},
 
 	'Merlin2' : {
 		title: 'Fin : Merlin',
 		subtitle: 'Partie B',
-		body: 'Eléments appris : Merlin meurt enfermé dans une cage invisible par la femme qu\'il aime',
+		body: 'Eléments appris : Merlin meurt enfermé dans une cage invisible par la femme qu\'il aime.',
 	}
 
 
 });
 
-// Define the notifications used in the game
-monogatari.action ('notification').notifications ({
-});
-
-// Define the Particles JS Configurations used in the game
+//* Animations 
 monogatari.action ('particles').particles ({
 	'snow': {
 		'particles': {
@@ -322,13 +316,7 @@ monogatari.action ('particles').particles ({
 		}
 	});
 
-
-// Define the canvas objects used in the game
-monogatari.action ('canvas').objects ({
-});
-
-
-// Credits of the people involved in the creation of this awesome game
+//* Crédits 
 monogatari.configuration ('credits', {
 	'': {
 		"Développement, scénario et illustrations" : "Mathilde Ançay",
@@ -347,24 +335,22 @@ monogatari.configuration ('credits', {
 			'<a href="https://heaspery.itch.io/">heaspery</a>',
 		]
 	},
-	'Liens Wikipédia' :  {
-		'test' : [
-			'<a href="https://www.instagram.com/mathancay/?hl=fr">@mathancay</a>',
+
+	'Liens Wiki pour en apprendre plus'  : {
+		'<a href="https://fr.wikipedia.org/wiki/Lancelot_du_Lac">Lancelot du lac</a>' : [
+			'<a href="https://fr.wikipedia.org/wiki/F%C3%A9e_Morgane">Morgane</a>',
 		],
-		'test4'   : [
-			'<a href="https://heaspery.itch.io/">heaspery</a>',
-		]
+
+		'<a href="https://fr.wikipedia.org/wiki/Gueni%C3%A8vre">Guenièvre</a>' : [
+			'<a href="https://fr.wikipedia.org/wiki/Roi_Arthur">Arthur</a>',
+		],
+		'<a href="https://fr.wikipedia.org/wiki/Merlin">Merlin</a>' : [
+			'<a href="https://fr.wikipedia.org/wiki/F%C3%A9e_Viviane">Viviane</a>',
+	],
 	},
 });
 
-
-
-// Define the voice files used in the game.
-monogatari.assets ('voices', {
-
-});
-
-// Define the sounds used in the game.
+//* Assets - sons 
 monogatari.assets ('sounds', {
 	'chevaux' : 'chevaux.mp3',
 	'pasNeige' : 'pasNeige.mp3',
@@ -372,17 +358,7 @@ monogatari.assets ('sounds', {
 	'feu' : 'feu.mp3',
 });
 
-// Define the videos used in the game.
-monogatari.assets ('videos', {
-
-});
-
-// Define the images used in the game.
-monogatari.assets ('images', {
-
-});
-
-// Define the backgrounds for each scene.
+//* Assests - Scenes 
 monogatari.assets ('scenes', {
 	'grotte' : 'grotte.png',
 	'foret' : 'foret.png',
@@ -390,10 +366,8 @@ monogatari.assets ('scenes', {
 	'grotteexterne' : 'grotteexterne.png',
 
 });
-
+//* Assets - pictures for gallery
 monogatari.assets ('gallery', {
-
-	
 	'fin1' : 'mort.png',
 	'finGuenievre' : 'guenievre.png',
 	'finViviane1' : 'viviane1.png',
@@ -407,8 +381,7 @@ monogatari.assets ('gallery', {
 	'finArthur' : 'arthur.png',
 });
 
-
-// Define the Characters
+//* Characters names and color 
 monogatari.characters ({
 	'y': {
 		name: 'Vieil Ermite',
@@ -430,8 +403,8 @@ monogatari.characters ({
 	
 });
 
+//* Game - Pathing 
 monogatari.script ({
-	
 	'Start': [
 		'play music foret loop',
 		'show particles snow',
@@ -470,7 +443,7 @@ monogatari.script ({
 		'show background grotte with fadeIn',
 		{
 			'Choice': {
-				'Dialog': 'y Bonsoir! Rentrez donc vous réchauffez! Il n\'est pas bon de traîner dormir dehors par des températures pareilles ! Ma grotte est bien précaire, mais la prochaine auberge n\'est qu\'à des kilomètres. Veuillez accepter le peu que je peux vous offrir, la survie d\'une nuit.',
+				'Dialog': 'y Bonsoir! Rentrez donc vous réchauffez! Il n\'est pas bon de traîner  dehors par des températures pareilles ! Ma grotte est bien précaire, mais la prochaine auberge n\'est qu\'à des kilomètres. Veuillez accepter le peu que je peux vous offrir, la survie d\'une nuit.',
 				'Yes' : {
 					'Text': 'Merci! Vous me sauvez la vie!',
 					'Do' : 'jump homme',
@@ -502,7 +475,7 @@ monogatari.script ({
 					},
 
 					'No' : {
-						'Text' : 'Non, je vais chercher autre chose, merci tout de même pour votre générosité',
+						'Text' : 'Non, je vais chercher autre chose, merci tout de même de votre générosité',
 						'Do' : 'jump Guenievre',
 					}
 
@@ -517,7 +490,7 @@ monogatari.script ({
 		'stop sounds feu',
 		'show particles snow',
 		'Vous ressortez de la grotte.',
-		'Le vent a déplacé toute la neige, et vous ne voyez plus les traces de vos pas qui vous ont menés jusqu\'ici',
+		'Le vent a déplacé toute la neige, et vous ne voyez plus les traces de vos pas qui vous ont menée jusqu\'ici',
 		'Prise de panique, vous courrez dans une direction hasardeuse',
 		'play sound pasNeige loop',
 		'Soudainement, vous entendez des bruits au loin : des chevaux et ce qui semble être quelques hommes',
@@ -539,8 +512,8 @@ monogatari.script ({
 		'Vous courrez jusqu\'à appercevoir les hommes qui vous appellaient et reconnaissez vos gardes accompagnés d\'une calèche',
 		'stop sound pasNeige',
 		'show background caleche with fadeIn',
-		'garde Ma Reine Guenièvre, Majesté, quel soulagement de vous retrouver saine et sauve! Comment vous êtes vous échappée?',
-		'garde L\'heure est grave, votre mari le roi Arthur affronte Mordred au petit matin. Nous devons rentrer au château.',
+		'garde Ma Reine Guenièvre, Majesté, quel soulagement de vous retrouver saine et sauve! Comment vous êtes vous échappée de Mordred?',
+		'garde L\'heure est grave, votre mari le roi Arthur l\'affronte pour vous récupérer au petit matin à Salesbières. Nous devons rentrer au château.',
 		'play sound chevaux',
 		'show message Guenievre',
 		'Bravo! Vous avez déverouillé une fin. Vous pouvez admirer votre collection dans la gallerie, dans le menu principal.',
@@ -581,7 +554,7 @@ monogatari.script ({
 
 	'fin2' : [
 		'player Je ne pense pas que vous ayez besoin de savoir',
-		'Un silence gênant suit votre réponse, l\'ermite vous regarde quelques secondes dans les yeux.',
+		'Un silence gênant suit votre réponse, l\'ermite vous regarde quelques secondes dans les yeux, puis hausse les épaules, l\'air agacé par cette réponse.',
 		'y Et bien, si vous n\'êtes pas ouverte à la discussion, je vous souhaite une bonne nuit.',
 		'show message fin2',
 		'Bravo! Vous avez déverouillé une fin. Vous pouvez admirer votre collection dans la gallerie, dans le menu principal.',
@@ -590,14 +563,14 @@ monogatari.script ({
 	],
 
 	'ArthurF' : [
-		'y Le roi! Mais vous deveu être une invitée d\'honneur pour être un ami du roi!',
-		'y Je m\'excuse d\'autant plus des conditions d\'acceuil dont je vous fait part et de l\'inconfort de la nuit à venir.',
+		'y Le roi! Mais vous devez être une invitée d\'honneur pour être un ami du roi!',
+		'y Je m\'excuse d\'autant plus des conditions d\'accueil dont je vous fais part et de l\'inconfort de la nuit à venir.',
 			{
 				'Choice' : {
 					'Dialog' : 'y Comment connaissez-vous le roi?',
 
 					'Famille' : {
-						'Text' :  'Des liens familiaux nous unissent',
+						'Text' :  'Il fait partie de ma famille',
 						'Do' : 'jump ArthurMorgane',	
 					},
 
@@ -612,7 +585,7 @@ monogatari.script ({
 
 	'ArthurMorgane' : [
 		'player Je suis sa demi-soeur. Le roi est le fruit d\'un adultère entre ma mère et feu son père Uter Pandragon. Suivies de nombreuses histoires de familles bien compliquées.',
-		'y Ca alors! Et quel est votre prénom ma chère?',
+		'y Ça alors! Et quel est votre prénom ma chère?',
 		'player Je m\'appelle Morgane',
 		'show message Morgane1',
 		'Bravo! Vous avez déverouillé une fin. Vous pouvez admirer votre collection dans la gallerie, dans le menu principal.',
@@ -621,10 +594,10 @@ monogatari.script ({
 	],
 
 	'ArthurViviane' : [
-		'y Une dame de haute importance je comprends donc ! Et que faites-vous pour notre roi?',
-		'player je suis une de ses plus proches aides dans la fondation de la Table Ronde',
+		'y Une dame de haute importance je comprends donc! Et que faites-vous pour notre roi?',
+		'player Je suis une de ses plus proches aides dans la fondation de la Table Ronde et je l\'aide activement dans la recherche du Graal.',
 		'y Oh j\'en entends des histoires concernant cette Table Ronde. Les chevaliers qu\'elle rassemble sont tous plus nobles et vaillants les uns que les autres',
-		'player Et comment! J\'ai élevé le meilleur d\'entre eux, Lancelot du lac. Sa prouesse est ma plus grande fierté.',
+		'player Et comment! J\'ai élevé le meilleur d\'entre eux, Lancelot du lac. Ses prouesses sont mes plus grandes fiertés.',
 		'y Ces chevaliers finiront par trouver le Graal qu\'ils recherchent. J\'en suis convaincu.',
 		'player Espérons-le ! Mais pour le moment, si cela ne vous dérange pas, je vais aller dormir. Le voyage m\'a épuisée.',
 		'y Faites donc!',
@@ -674,10 +647,10 @@ monogatari.script ({
 	],
 
 	'MerlinMorgane' : [
-		'y Recueillie? Vous êtes orpheline? Si c\'est le cas, je vous présentes mes profondes condoléances.',
+		'y Recueillie? Vous êtes orpheline?',
 		'player Oui je le suis. Le père de notre cher roi Arthur a commandé l\'assassinat de mon père afin de pouvoir épouser ma mère.',
 		'player Je me suis ensuite retrouvée engagée à un homme bien trop vieux pour moi à l\'époque.',
-		'player Merlin m\'a alors accueillie jusqu\'à ma maturité. Il a profitié de ce moment pour m\'apprendre ce qu\'il savait.',
+		'player Merlin m\'a alors accueillie jusqu\'à ma maturité. Il a profité de ce moment pour m\'apprendre ce qu\'il savait.',
 		'y Quelle triste histoire, j\'espère que vous en tenez pas trop rigueur à notre roi Arthur.',
 		'player Non, ne vous inquiétez pas, il a su se faire pardonner',
 		'show message Morgane2',
@@ -717,21 +690,22 @@ monogatari.script ({
 		'player Je m’en vais rencontrer Mordred demain à l’aube, où je rejoindrais mes soldats.',
 		'y VOS soldats ?? Mais.. Ne me dites pas que vous êtes le roi??',	
 		'player Lui-même.',
-		'player Mais ne vous en faites pas, la bataille de demain s’annonce mortelle et une fois là-bas, je ne suis qu’un homme rien de plus.',
+		'player Mais ne vous en faites pas, la bataille de demain s’annonce tragique et mon titre n\'aura plus d\'importance en combat.',
 		'player Mon armée n’est pas assez puissante, mais je ne peux pas me permettre de demander de l’aide. Même si les augures me prédisent un issue fatale suite à cette bataille.', 
-		'y Sire, quelle humilité ! Je vous souhaite bonne chance. ',
+		'y Sire, Quelle humilité ! Je vous souhaite bonne chance. ',
+		'player Humilité ou stupidité, la frontière est fine.',
 		'y Sire, Je dois vous avouez, j’ai une question et j’aimerais profiter de votre présence pour avoir une réponse. Mordred, c’est bien votre fils n’est-ce pas ? Comment un père peut-il arriver à déclarer la guerre à son fils ?',
-		'player Mordred a beau être mon fils, il a kidnappé ma femme Guenièvre et étant amoureux d’elle veut l’épouser.',
+		'player Mordred a beau être mon fils, il a kidnappé ma femme Guenièvre et veut l’épouser.',
 		'y Je vous avoue être un peu confu par la situation, Sire,',
 		'player Mordred n’est pas le fils de Guenièvre, mais d’une aventure que j’ai eu avec une autre femme, Morgane.',
-		'y Ah, voilà qui est plus clair Sire, merci pour cette précision.',
+		'y Ah, voilà qui est plus clair, merci pour cette précision et excusez-moi pour ces indiscrétions. Ce sera sûrement la seule et unique fois que j\'aurais l\'occasion de vous poser la question.',
 		'y Je ne voudrais pas plus vous retenir d’un long sommeil en cette veille de bataille. Je vous prie de bien vouloir accepter le peu que je peux vous offrir, et vous souhaite une belle nuit.', 
-		'player Merci',
+		'player Merci, bonne nuit à vous',
 		'show scene #000000 with fadeIn',
 		'Le lendemain matin, vous partez vous battre contre votre ennemi Mordred.',
 		'Les prédictions avaient juste: La bataille vous est fatale.',
-		'Vous vous retirez à tout jamais sur l\'île des morts, Avalon',
-		'Après vous être débarrassé de votre épée Excalibur, au fond du lac',
+		'Vous vous retirez à tout jamais sur l\'île des morts, Avalon,',
+		'Après vous être débarrassé de votre épée Excalibur, au fond de l\'eau.',
 		'show message Arthur1',
 		'Bravo! Vous avez déverouillé une fin. Vous pouvez admirer votre collection dans la gallerie, dans le menu principal.',
 		'gallery unlock finArthur',
@@ -741,7 +715,7 @@ monogatari.script ({
 
 	'NoArthur' : [
 		'player Je me suis simplement retrouvé au mauvais endroit au mauvais moment.',
-		'y J\'ai comme l\'impression que ce n\'est tout de même pas le fruit du hassard que vous vous retrouviez ici.',
+		'y J\'ai comme l\'impression que ce n\'est pas le fruit du hasard que vous vous retrouviez ici.',
 		
 		{
 			'Choice' : {
@@ -770,7 +744,7 @@ monogatari.script ({
 		'y Ne serait-il pas sage d’aller tout de même l’aider ? Le roi n’est peut être pas tout à lui mais sera sûrement reconnaissant pour sa vie malgré l’outrage que vous lui avez commis.',
 		'player Ma fierté est malheureusement aussi grande que celle du roi, si ce n’est plus. Je ne vais pas contredire ses ordres et je resterai à ma place, quelle qu’en soit le prix.',
 		'show scene #000000 with fadeIn',
-		'Vous vous endormez, non pas sans angoisse concernant l\'avenir de votre roi.',
+		'Vous vous endormez, non pas sans angoisse concernant l\'avenir de votre roi et de la femme que vous aimez.',
 		'show message Lancelot',
 		'Bravo! Vous avez déverouillé une fin. Vous pouvez admirer votre collection dans la gallerie, dans le menu principal.',
 		'gallery unlock finLancelot',
@@ -806,7 +780,7 @@ monogatari.script ({
 		'player  Héhé Salut à toi mon vieil ami. J’étais à la recherche de baies qui ne poussent que par ici afin de concocter quelque potion.',
 		'y Que vois-tu de cette bataille à venir? En connais-tu l’issue ? est-elle favorable ?',
 		'player  Je lui connais une issu qui ne laissera pas les gens indifférents.',
-		'y Tu es bien avare de ton don d’ubiquité, comme à ton habitude. Mais qui ne le ferait pas, à ta place.',
+		'y Tu es bien avare de ton don d’ubiquité, comme à ton habitude. Mais qui ne le ferait pas à ta place.',
 		'y Le roi Arthur n’a plus été à la hauteur ces derniers temps, paix à son âme si quelque malheur devait lui arriver.',
 		'show scene #000000 with fadeIn',
 		'Après avoir ressasser des vieux souvenirs de votre amitié,',

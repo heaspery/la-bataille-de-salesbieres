@@ -6,7 +6,7 @@ La Bataille de Salesbières est une visual novel éducative basée sur la litté
 
 ![Screenshot](screenshot.png)
 
-Cette visual novel comprends 11 fins différentes à découvrir. Chaque fois qu'une d'entre elle est découverte pour la première fois, elle débloque une image spécifique dans la gallerie du menu. 
+Cette visual novel comprends 11 fins différentes à découvrir. Chaque fois qu'une d'entre elle est découverte pour la première fois, elle débloque une image spécifique qui peut être admirée dans la gallerie du menu. 
 
 ## Comment y jouer 
 Vous pouvez y jouer en ligne sur la page itch.io suivante, sur pc ou mobile (format paysage recommandé) : https://heaspery.itch.io/la-bataille-de-salesbieres
@@ -15,7 +15,7 @@ Vous pouvez y jouer en ligne sur la page itch.io suivante, sur pc ou mobile (for
 Cloner le repository git et développer directement dans le dossier cloné. Ce jeu est réalisé avec Monogatari dans la documentation officielle est disponible à l'adresse suivante : https://developers.monogatari.io/documentation
 
 ## Contexte 
-Ce jeu a été développé dans le cadre du cours "Développement de jeux vidéo 2D" dispensé par Isaac Pante (SLI, Lettres, UNIL)) au semestre de printemps 2021. 
+Ce jeu a été développé dans le cadre du cours "Développement de jeux vidéo 2D" dispensé par Isaac Pante (SLI, Lettres, UNIL) au semestre de printemps 2021. 
 
 
 ## Crédits 

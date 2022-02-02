@@ -4,6 +4,10 @@
 
 La Bataille de Salesbières est une visual novel éducative basée sur la littérature française médiévale réalisée avec Monogatari. Percez les mystères de la dernière bataille du roi Arthur, en explorant les différents scénarios que vous propose le jeu et en incarnant les multiples personnages de son univers.
 
+![Screenshot](screenshot.png)
+
+Cette visual novel comprends 11 fins différentes à découvrir. Chaque fois qu'une d'entre elle est découverte pour la première fois, elle débloque une image spécifique dans la gallerie du menu. 
+
 ## Comment y jouer 
 Vous pouvez y jouer en ligne sur la page itch.io suivante, sur pc ou mobile (format paysage recommandé) : https://heaspery.itch.io/la-bataille-de-salesbieres
 
